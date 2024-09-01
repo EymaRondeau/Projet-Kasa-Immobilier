@@ -1,0 +1,77 @@
+.card_container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 70px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 70px;
+}
+
+.card_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+}
+
+.card {
+    width: 365px;
+    margin: 20px;
+    text-align: left; /* Alignement du texte à gauche */
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; /* Nécessaire pour superposer le texte sur l'image */
+}
+
+.card img {
+    width: 100%;
+    height: 220px; /* Ajuste la hauteur de l'image */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Effet au survol */
+}
+
+.card:hover img {
+    transform: scale(1.05); /* Agrandissement au survol */
+}
+
+.card_text_overlay {
+    position: absolute;
+    bottom: 8px; /* Place le texte à 15px du bas de l'image */
+    left: 15px; /* Place le texte à 15px du côté gauche de l'image */
+    color: white; /* Texte en blanc */
+    font-size: 17px;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+/* Responsive tablet */
+@media screen and (max-width: 980px) {
+    .card_container {
+        margin: 0px 0px;
+    }
+
+    .card_wrapper {
+        background-color: transparent;
+        flex-direction: column;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%; /* Les cartes prennent la largeur de l'écran sur mobile */
+    }
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 650px) {
+    .card_container {
+        margin: 0px 30px;
+        padding: 0px 0px;
+    }
+}
