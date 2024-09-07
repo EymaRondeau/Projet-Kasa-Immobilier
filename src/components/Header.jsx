@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../images/logo.svg';
-import './Header.scss'; // Assurez-vous que le chemin est correct
+import './Header.scss';
 
 function Header() {
   return (
@@ -15,7 +15,7 @@ function Header() {
         <NavLink to="/" exact activeClassName="active">
           Accueil
         </NavLink>
-        <NavLink to="/a-propos" activeClassName="active">
+        <NavLink to="/about" activeClassName="active">
           A propos
         </NavLink>
       </nav>
