@@ -22,10 +22,10 @@
     top: 50%;
     transform: translateY(-50%);
     color: white;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0); /* Flèche transparente avec du texte blanc */
     border: none;
-    font-size: 45px;
-    padding: 10px;
+    font-size: 35px; /* Réduit la taille de la flèche */
+    padding: 5px; /* Moins de padding pour une flèche plus petite */
     cursor: pointer;
     font-family: 'Montserrat', sans-serif; /* Application de la police Montserrat */
 }
@@ -60,4 +60,19 @@
 .slideshow img.fade {
     opacity: 0;
     transition: opacity 0.5s ease-in-out; /* Douce transition pour chaque changement d'image */
+}
+
+/* Responsive pour les petits écrans */
+@media screen and (max-width: 768px) {
+    .slideshow {
+        width: 90%; /* Prend toute la largeur sur les petits écrans */
+        height: 320px; /* Hauteur automatique pour maintenir les proportions */
+        margin-top: 20px; /* Ajout de l'espacement en haut uniquement sur mobile */
+    }
+
+    
+
+    .slide-counter {
+        font-size: 16px; /* Réduire la taille du compteur pour les petits écrans */
+    }
 }

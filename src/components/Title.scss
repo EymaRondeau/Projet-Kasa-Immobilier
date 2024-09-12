@@ -1,17 +1,28 @@
 .logement-title-location {
-    display: flex;
-    flex-direction: column;
-    gap: 2px; 
-  }
-  
+  display: flex;
+  flex-direction: column;
+  gap: 2px; 
+}
+
+.logement-title-location h2 {
+  color: #FF6060; 
+  font-weight: 500;
+  font-size: 44px; 
+  margin: 0; 
+}
+
+.logement-title-location p {
+  margin: 0; 
+  font-size: 15px; 
+}
+
+/* Responsive pour les petits écrans */
+@media screen and (max-width: 768px) {
   .logement-title-location h2 {
-    color: #FF6060; 
-    font-weight: 500;
-    font-size: 44px; 
-    margin: 0; 
+      font-size: 25px; /* Réduire la taille du titre sur mobile */
   }
   
   .logement-title-location p {
-    margin: 0; 
-    font-size: 15px; 
+      font-size: 14px; /* Réduire la taille du texte de localisation sur mobile */
   }
+}
