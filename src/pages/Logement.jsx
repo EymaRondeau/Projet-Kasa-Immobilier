@@ -47,13 +47,11 @@ export default function Logement() {
 
   return (
     <>
-      <Header />
-      <Slider pictures={logement.pictures} />
-      <Informations logement={logement} />
-      <div className="collapses-container">
-        <Collapse data={collapseData} containerStyle={{maxWidth: '1300px'}} className="two-columns" />
-      </div>
-      <Footer />
+        <Header />
+        <Slider pictures={logement.pictures} />
+        <Informations logement={logement} />
+        <Collapse data={collapseData}/>
+        <Footer />
     </>
-  );
+);
 }
