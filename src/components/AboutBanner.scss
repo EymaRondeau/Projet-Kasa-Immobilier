@@ -18,6 +18,14 @@
     border-radius: 10px;
     filter: brightness(70%);
   }
+
+
+  /* Responsive tablette */
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+  .about-banner {
+      width: 90%; /* Largeur ajustée à 90% */
+  }
+}
   
   /* Bannière pour mobile */
   @media screen and (max-width: 650px) {

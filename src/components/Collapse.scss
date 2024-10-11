@@ -47,6 +47,13 @@
     transform: rotate(180deg); 
 }
 
+/* Responsive tablette */
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+  .collapse-container {
+    width: 85%;
+  }
+}
+
 @media (max-width: 769px) {
   .collapse-container {
     width: 90%;

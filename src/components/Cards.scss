@@ -90,6 +90,23 @@
       margin-bottom: 20px;
     }
   }
+
+
+/* Responsive tablette */
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+  .card_wrapper {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px;
+  }
+
+  .card {
+      width: calc(50% - 40px); /* Largeur de 50% moins la marge */
+      margin: 20px;
+  }
+}
+
   
   /* Responsive mobile */
   @media screen and (max-width: 650px) {
